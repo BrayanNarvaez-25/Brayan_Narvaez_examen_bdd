@@ -19,6 +19,9 @@ public class Vuelo {
 
     @Column(name = "asientos_disponibles", nullable = false)
     private Integer asientosDisponibles;
+    
+    @Column(name = "destino", length = 100)
+    private String destino;
 
     // Getters y setters para todos los campos
     public Long getId() { return id; }
@@ -29,4 +32,6 @@ public class Vuelo {
     public void setPrecioBoleto(BigDecimal precioBoleto) { this.precioBoleto = precioBoleto; }
     public Integer getAsientosDisponibles() { return asientosDisponibles; }
     public void setAsientosDisponibles(Integer asientosDisponibles) { this.asientosDisponibles = asientosDisponibles; }
+    public String getDestino() { return destino; }
+    public void setDestino(String destino) { this.destino = destino; }
 }

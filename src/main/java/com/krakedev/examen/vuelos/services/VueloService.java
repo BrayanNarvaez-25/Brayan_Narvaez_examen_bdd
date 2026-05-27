@@ -34,6 +34,7 @@ public class VueloService {
         vuelo.setCodigo(datos.getCodigo());
         vuelo.setPrecioBoleto(datos.getPrecioBoleto());
         vuelo.setAsientosDisponibles(datos.getAsientosDisponibles());
+        vuelo.setDestino(datos.getDestino());
         return vueloRepository.save(vuelo);
     }
 
